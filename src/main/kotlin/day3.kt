@@ -3,8 +3,6 @@ package org.example
 import java.nio.file.Files
 import java.nio.file.Paths
 
-fun String.toInteger() = Integer.valueOf(this)
-
 fun main() {
     val path = Paths.get("src", "main", "resources", "day3.txt")
     val lines = Files.readAllLines(path)
