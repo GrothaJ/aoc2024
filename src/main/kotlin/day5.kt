@@ -64,11 +64,11 @@ class Day5 {
             if (line.isBlank()) isRule = false
             if (isRule) {
                 val nums = line.split("|")
-                val before = nums[0].toInteger()
-                val after = nums[1].toInteger()
+                val before = nums[0].toInt()
+                val after = nums[1].toInt()
                 rules.compute(after) { _, v -> if (v == null) listOf(before) else v + before }
             } else if (line.isNotBlank()) {
-                pages.add(line.split(",").map { it.toInteger() })
+                pages.add(line.split(",").map { it.toInt() })
             }
         }
         return rules to pages

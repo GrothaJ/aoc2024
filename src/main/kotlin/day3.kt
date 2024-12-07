@@ -94,8 +94,8 @@ fun checkForMul(line: String, idx: Int): Int {
         return 0
     }
     // form numbers
-    val num1 = line.substring(idx + 4, idx + 4 + firstLength).toInteger()
-    val num2 = line.substring(idx + 5 + firstLength, idx + 5 + firstLength + secondLength).toInteger()
+    val num1 = line.substring(idx + 4, idx + 4 + firstLength).toInt()
+    val num2 = line.substring(idx + 5 + firstLength, idx + 5 + firstLength + secondLength).toInt()
     return num1 * num2
 }
 
